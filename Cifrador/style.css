@@ -1,0 +1,109 @@
+body {
+  background-color: #D80032;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  -o-box-shadow: 0px -6px 11px -3px rgba(0, 0, 0, 0.53);
+  -ms-box-shadow: 0px -6px 11px -3px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 0px 6px 11px -3px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px 6px 11px -3px rgba(0, 0, 0, 0.53);
+  box-shadow: 0px 6px 11px -3px rgba(0, 0, 0, 0.53);
+  background-color: #F78CA2;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo img {
+  height: 70px;
+}
+
+nav a {
+  color: #523d3d;
+  font-size: 25px;
+  padding: 15px;
+}
+nav a :hover {
+  color: #F9DEC9;
+}
+
+.main-1, .main-2 {
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.text-1, .text-2 {
+  text-align: center;
+  min-height: 200px;
+  width: 80%;
+  outline: none;
+  border: none;
+  background-color: #F9DEC9;
+  margin-bottom: 20px;
+}
+.text-1:hover, .text-2:hover {
+  background-color: white;
+}
+
+.btn-1, .btn-2, .btn-3 {
+  border: none;
+  padding: 10px 20px;
+  min-width: 100px;
+  background-color: #F78CA2;
+  -ms-box-shadow: 1px 1px 11px 4px rgba(0, 0, 0, 0.53);
+  -o-box-shadow: 1px 1px 11px 4px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 1px 1px 11px 4px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 1px 1px 11px 4px rgba(0, 0, 0, 0.53);
+  box-shadow: 1px 1px 11px 4px rgba(0, 0, 0, 0.53);
+}
+.btn-1:hover, .btn-2:hover, .btn-3:hover {
+  transform: scale(1.1);
+  background-color: #F9DEC9;
+}
+
+footer {
+  box-shadow: 0px -6px 11px -3px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 0px -6px 11px -3px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px -6px 11px -3px rgba(0, 0, 0, 0.53);
+  -o-box-shadow: 0px -6px 11px -3px rgba(0, 0, 0, 0.53);
+  -ms-box-shadow: 0px -6px 11px -3px rgba(0, 0, 0, 0.53);
+  background-color: #F78CA2;
+  display: flex;
+  min-height: 8px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.download-1 a {
+  display: flex;
+  text-decoration: none;
+  padding: 22px;
+  color: #523d3d;
+  font-size: 15px;
+}
+.download-1 a:hover {
+  color: black;
+}
+
+.download-2 a {
+  padding: 22px;
+  display: flex;
+  text-decoration: none;
+  color: #523d3d;
+  font-size: 15px;
+}
+.download-2 a:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

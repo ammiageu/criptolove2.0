@@ -1,0 +1,120 @@
+//palet
+$red-v: #f3416b;
+$red: #D80032;
+$dark-pink: #F78CA2;
+$dark-pink-v: #f5a8b8;
+$brown: #523d3d;
+$soft-pink: #F9DEC9;
+
+body{
+background-color: $red;
+margin: 0;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+
+}
+header{ 
+-o-box-shadow: 0px -6px 11px -3px rgba(0,0,0,0.53);
+-ms-box-shadow: 0px -6px 11px -3px rgba(0,0,0,0.53);
+-webkit-box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.53);
+box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.53);
+  background-color: $dark-pink;
+  min-height: 70px;
+  display: flex; //para mostrarse horizontal
+  justify-content: space-between; //justify-content hubica el contenido en eje principal y (fila iria arriba en el medio) y  space-between les da un espacio entre ellos uno pasa a una esquina y el otro a otra.
+  align-items: center; //align-items alinea tus elementos en el eje segundaria iria en el medio pero del eje x
+  //con flex-direction puedes cambiar donde  estaria ubicado el posicionamiento inicial en aling items y justify content//
+  padding:10px ;
+}
+.logo img{
+  height: 70px;
+}
+nav a {
+  color: $brown;
+  font-size: 25px;
+  padding: 15px;
+ :hover{
+  color: $soft-pink;
+ }
+}
+ .main-1, .main-2{
+  display: flex;
+  padding: 25px;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+.text-1 , .text-2{
+  text-align: center;
+  min-height: 200px;
+  width: 80%;
+  outline: none;
+  border: none;
+  background-color: $soft-pink;
+  margin-bottom: 20px;
+
+  &:hover{
+    background-color: white;
+  }
+ }
+ 
+ .btn-1, .btn-2, .btn-3{
+
+  border: none;
+  padding: 10px 20px;
+  min-width: 100px;
+  background-color: $dark-pink;
+  -ms-box-shadow: 1px 1px 11px 4px rgba(0,0,0,0.53);
+  -o-box-shadow: 1px 1px 11px 4px rgba(0,0,0,0.53);
+  -webkit-box-shadow: 1px 1px 11px 4px rgba(0,0,0,0.53);
+  -moz-box-shadow: 1px 1px 11px 4px rgba(0,0,0,0.53);
+  box-shadow: 1px 1px 11px 4px rgba(0,0,0,0.53);
+  &:hover{
+    transform: scale(1.1);
+    background-color: $soft-pink;
+  }
+ }
+ 
+ 
+ 
+ 
+footer{
+  // offset-x | offset-y | blur-radius | spread-radius | color 
+  box-shadow: 0px -6px 11px -3px rgba(0,0,0,0.53); //no funciona en todos los navegadores. Para ello utilizan prefijos entre guiones, que identifican claramente cuando se trata de una propiedad suya.
+  -webkit-box-shadow: 0px -6px 11px -3px rgba(0,0,0,0.53); //Chrome y safari
+  -moz-box-shadow: 0px -6px 11px -3px rgba(0,0,0,0.53); //firefox
+  -o-box-shadow: 0px -6px 11px -3px rgba(0,0,0,0.53);//opera
+  -ms-box-shadow: 0px -6px 11px -3px rgba(0,0,0,0.53);//Internet Explorer
+  background-color: $dark-pink;
+  display: flex;
+  min-height: 8px;
+  justify-content: center;
+ margin-top: auto;
+
+}
+.download-1 a{
+display: flex;
+text-decoration: none;
+padding: 22px;
+color: $brown;
+font-size: 15px;
+
+&:hover{
+  color: black;
+}
+}
+.download-2 a{
+  padding: 22px;
+  display: flex;
+  text-decoration: none;
+  color: $brown;
+  font-size: 15px;
+  &:hover{
+    color: black;
+  }
+  
+}
+
